@@ -57,7 +57,7 @@ if [[ "$1" == "4" ]]
 	then
 		echo "Merging Log"
 		rm -f "merge.log"
-		log=`git log --oneline`
+		fetch=`git log --oneline`
 		while read -r line
 			do
 				if [[ ! -z `echo $line | grep "Merge"` ]] 
@@ -66,7 +66,7 @@ if [[ "$1" == "4" ]]
 						echo $target >> merge.log 
 						echo "$target found"
 				fi
-		done <<< $log
+		done <<< $fetch
 		echo "Complete!"
 fi
 		
