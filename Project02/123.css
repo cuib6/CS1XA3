@@ -1,0 +1,31 @@
+body{
+    font-size: 20px;
+    font-family: OCR A Std, monospace;
+    color: #333;
+	background-image: url("background.jpg");
+	background-color: #cccccc;
+}
+
+.question{
+    font-weight: 700;
+}
+.answers {
+  margin-bottom: 25px;
+}
+.answers label{
+  display: block;
+}
+#submit{
+    font-family: OCR A Std, monospace;
+    font-size: 20px;
+    background-color: #ff5050;
+    color: #000000;
+    border: 20px;
+    border-radius: 50px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+#submit:hover{
+    background-color: #ff5050;
+}
